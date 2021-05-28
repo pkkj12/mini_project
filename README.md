@@ -23,14 +23,19 @@
 
 
 <div>
-	<a href="https://www.youtube.com/watch?v=4FKeZpDfrCs&t" target="_blank"><image src = "https://img.youtube.com/vi/4FKeZpDfrCs&t/mqdefault.jpg"></a>	
+	<a href="https://www.youtube.com/watch?v=4FKeZpDfrCs" target="_blank"><image src = "https://img.youtube.com/vi/4FKeZpDfrCs/mqdefault.jpg"></a>	
 
 </div>
-
+	
+	
+	
+	
 
 # 개발 환경
 
-JDK 11.0.10 mariadb-java-client-2.5.4 JDE: Eclipse
+JDK 11.0.10 
+mariadb-java-client-2.5.4 
+JDE: Eclipse
 
 ## 잘한 점
 
@@ -45,27 +50,14 @@ JDK 11.0.10 mariadb-java-client-2.5.4 JDE: Eclipse
 - 공이 블럭과 충돌할 때 튕겨 나가야 하는데 가끔씩 일직선으로 블럭의 반사를 무시하고 뻗어나가는 경우가 있어 그 버그를 없앨려고 충돌 여부 코드의 조건을 수정해 나가는 것이 어려웠다.
 - 블럭과, 볼의 스레드를 추가하는 과정에서 모르는 버그들이 많이 일어나서 스레드 내의 조건을 수정하거나 프레임 에서의 타이머와 볼,블럭 스레드를 수정하는 등의 공부를 해야되겠다.
 - 스테이지 1,2,3 코드를 다 짰지만 중복되는 코드가 많아 중복되는 코드를 일관성 있게 수정할려고 했지만 여러 오류들이 일어나서 그대로 냅뒀다.
-- 공들이 블럭과 충돌했을시 점수가 배로 늘어나 interrupt()를 쓰려고 했지만 적용되지 않아서 공과 블럭 스레드의 오버라이드 메서드에 if문과 break문을 써서 해결하게 됐다.
-- DB로 점수보기를
+- 공들이 블럭과 충돌했을시 점수가 배로 늘어나 interrupt()를 쓰려고 했지만 적용되지 않아서 공과 블럭 스레드의 오버라이드 메서드에 if문과 break문을 써서 해결하게 됐다. 
 
 ## 개선해야될 점들
 
 - DB를 활용해서 회원가입 및 로그인 구현까지는 했으나 점수 및 랭킹을 출력할 수 있도록 할 것이다.
 - 공과 블럭이 충돌할 시 공이 일직선으로 나가는 잔버그가 있어 점차 수정해 나갈 것이다.
 - 효과음을 추가할 것이다.
-- 
 
 
-
-
-
-  
-  
-  
-	
-	
-	
-	
-
-[Javadoc]https://pkkj12.github.io/mini_project/mini_project/doc/index.html
+[Javadoc](https://pkkj12.github.io/mini_project/mini_project/doc/index.html)
 
