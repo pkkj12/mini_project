@@ -49,43 +49,7 @@ public class Stage2Ball extends JPanel implements Stage2Constant, Runnable {
 	int x_direction, y_direction; // 공의 x방향, y방향
 
 	Stage2Bar bar;
-	/**
-	 * 
-	 * 볼의 중앙
-	 */
-	Point getCenter() { // 볼의 가운데
-		return new Point(x + (BALL_WIDTH / 2), y + (BALL_HEIGHT / 2)); // 볼의 중간
-	}
-	/**
-	 * 
-	 * 볼의 하단
-	 */
-	Point getBottomCenter() { // 볼의 밑부분
-		return new Point(x + (BALL_WIDTH / 2), y + (BALL_HEIGHT)); // 볼의 밑부분
-
-	}
-	/**
-	 * 
-	 * 볼의 상단
-	 */
-	Point getTopCenter() { // 볼의 윗부분
-		return new Point(x + (BALL_WIDTH / 2), y);
-	}
-	/**
-	 * 
-	 * 볼의 좌
-	 */
-	Point getLeftCenter() { // 볼의 왼쪽
-		return new Point(x, y + (BALL_HEIGHT / 2));
-	}
-
-	/**
-	 * 
-	 * 볼의 우
-	 */
-	Point getRightCenter() { // 볼의 오른쪽
-		return new Point(x + (BALL_WIDTH), y + (BALL_HEIGHT / 2));
-	}
+	
 
 	/**
 	 * 
