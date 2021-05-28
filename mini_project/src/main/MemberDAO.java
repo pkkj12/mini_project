@@ -182,15 +182,15 @@ public class MemberDAO extends JFrame{
 	
 	
 
-	private Connection getConnection() throws SQLException {
+	private Connection getConnection() throws SQLException { // DB와 연결시킬 통로를 만듦
 		return DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
 	}
 	
-	private void close(Connection conn, PreparedStatement ps) {
+	private void close(Connection conn, PreparedStatement ps) { // 통로를 닫음
 		close(conn, ps, null); 
 	}
 	
-	private void close(Connection conn, PreparedStatement ps, ResultSet rs) {
+	private void close(Connection conn, PreparedStatement ps, ResultSet rs) {  // 통로를 닫기 위한 조건문
 		try {
 			if(rs != null) { rs.close(); }
 			if(ps != null) { ps.close(); }
@@ -201,13 +201,7 @@ public class MemberDAO extends JFrame{
 	}
 		
 		
-		public static void main(String[] args) {
-			MemberDAO dao = MemberDAO.getInstance();
-			MemberDTO dto = new MemberDTO();
-			
-			System.out.println(dto.getEmail());
-					}
-		
+
 		
 	}
 	
