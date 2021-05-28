@@ -60,7 +60,7 @@ public class MainGUI extends JFrame implements Stage2Constant {
 	private Stage1Bar bar1; // 3개의 바를 선언
 	private Stage2Bar bar2;
 	private Stage3Bar bar3;
-	private Stage1MainFrame rootComponent1; // 3개의 게임 실행창 선언
+	private Stage1MainFrame rootComponent1; // 3개의 스테이지를 선언
 	private Stage2MainFrame rootComponent2;
 	private Stage3MainFrame rootComponent3;
 
@@ -70,7 +70,7 @@ public class MainGUI extends JFrame implements Stage2Constant {
 	 *                 <li>3개의 스테이지 중 하나를 선택하면</br>
 	 *                 수행할 작업들
 	 */
-	public ActionListener listener = new ActionListener() {
+	public ActionListener listener = new ActionListener() { // 리스너를 통해 3개의 버튼이 작동되게끔 설정
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
