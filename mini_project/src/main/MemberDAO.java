@@ -141,7 +141,7 @@ public class MemberDAO extends JFrame{
 	}
 	
 	
-	public int delete(String email){ // 이메일, 패스워드, 닉네임 전체 삭제
+	public int delete(String email){ // 회원가입 할 때 이메일, 패스워드, 닉네임의 조건이 맞지 않으면 입력받은 DB데이터 삭제
 		String sql = "DELETE FROM member WHERE email = ?"; 
 		int deletedRow = 0;
 		try {
