@@ -18,6 +18,16 @@
 - 게임 끝나면 게임 종료, 스테이지 다시선택하기
 - 회원가입, 로그인 구현
 
+
+## 시연영상
+
+
+<div>
+	<a href="https://www.youtube.com/watch?v=4FKeZpDfrCs&t" target="_blank"><image src = "https://img.youtube.com/vi/4FKeZpDfrCs&t/mqdefault.jpg"></a>	
+
+</div>
+
+
 # 개발 환경
 
 JDK 11.0.10 mariadb-java-client-2.5.4 JDE: Eclipse
@@ -45,19 +55,17 @@ JDK 11.0.10 mariadb-java-client-2.5.4 JDE: Eclipse
 - 효과음을 추가할 것이다.
 - 
 
-## 시연영상
 
-
-<div>
-	<a href="https://www.youtube.com/watch?v=4FKeZpDfrCs&t" target="_blank"><image src = "https://img.youtube.com/vi/4FKeZpDfrCs&t/mqdefault.jpg"></a>	
-
-</div>
 
 
 
   
   
   
+	
+	
+	
+	
 
 [Javadoc]https://pkkj12.github.io/mini_project/mini_project/doc/index.html
 
