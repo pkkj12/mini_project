@@ -56,17 +56,17 @@ JDE: Eclipse
 
 - DB를 활용해서 회원가입 및 로그인 구현까지는 했으나 점수 및 랭킹을 출력할 수 있도록 할 것이다.
 - 공과 블럭이 충돌할 시 공이 일직선으로 나가는 잔버그가 있어 점차 수정해 나갈 것이다.
-- 효과음을 추가할 것이다.
+- 배경 음악과 효과음을 추가할 것이다.
 
 
 ## SQL문
 ```mysql
 create table member(
-email VARCHAR(40) UNIQUE NOT NULL,
-password VARCHAR(15) NOT NULL,
-nickname VARCHAR(20) UNIQUE NOT NULL,
-stage INT DEFAULT 1,
-score INT DEFAULT 0
+email VARCHAR(40) UNIQUE NOT NULL, -- 40글자수 제한, 중복 제한
+password VARCHAR(15) NOT NULL,   -- 15글자 제한, 특수문자, 숫자, 영문 포함,
+nickname VARCHAR(20) UNIQUE NOT NULL,  -- 20글자 제한, 중복 제한
+stage INT DEFAULT 1,		-- 3개의 스테이지, 기본 1
+score INT DEFAULT 0		-- 점수, 기본 0
 )
 ```	
 	
