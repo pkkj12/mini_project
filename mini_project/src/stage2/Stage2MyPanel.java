@@ -76,7 +76,7 @@ public class Stage2MyPanel extends JPanel implements Stage2Constant {
 	 * <li>바 설정</li>
 	 * 
 	 */
-	public void drawUI(Graphics2D g2d) {
+	public void drawUI(Graphics2D g2d) { // 블럭, 공, 바에 대한 패널
 
 		// draw Blocks
 		for (int i = 0; i < BLOCK_ROWS; i++) {
@@ -84,7 +84,7 @@ public class Stage2MyPanel extends JPanel implements Stage2Constant {
 
 				if (rootComponent.blocks[i][j].isHidden) {
 					continue;
-				} else if (rootComponent.blocks[i][j].color == 0) {	
+				} else if (rootComponent.blocks[i][j].color == 0) {		
 					g2d.setColor(Color.WHITE);
 				} else if (rootComponent.blocks[i][j].color == 1) {
 					g2d.setColor(Color.YELLOW);
