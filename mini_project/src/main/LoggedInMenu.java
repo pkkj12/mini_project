@@ -182,7 +182,5 @@ public class LoggedInMenu extends JFrame implements Stage2Constant {
 		setVisible(true); // 보이게끔 설정
 
 	}
-public static void main(String[] args) {
-	new LoggedInMenu("fdfd");
-}
+
 }
