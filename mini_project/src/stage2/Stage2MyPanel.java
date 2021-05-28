@@ -108,11 +108,11 @@ public class Stage2MyPanel extends JPanel implements Stage2Constant {
 
 			// draw Ball1
 			g2d.setColor(Color.YELLOW); //  공1 색깔
-			g2d.fillOval(rootComponent.balls[0].x, rootComponent.balls[0].y, BALL_WIDTH, BALL_HEIGHT); // Ÿ�� �׸���
+			g2d.fillOval(rootComponent.balls[0].x, rootComponent.balls[0].y, BALL_WIDTH, BALL_HEIGHT); 
 
 			// draw Ball2
 			g2d.setColor(Color.WHITE); //  공2 색깔
-			g2d.fillOval(rootComponent.balls[1].x, rootComponent.balls[1].y, BALL_WIDTH, BALL_HEIGHT); // Ÿ�� �׸���
+			g2d.fillOval(rootComponent.balls[1].x, rootComponent.balls[1].y, BALL_WIDTH, BALL_HEIGHT); 
 
 			// draw Bar
 			g2d.setColor(Color.LIGHT_GRAY);
