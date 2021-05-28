@@ -35,35 +35,32 @@ public class LoginGUI extends JFrame {
 	JPanel panel = new JPanel();
 	public String email;
 	public String password;
-	private ActionListener listener = new ActionListener() {
+	private ActionListener listener = new ActionListener() {	// "확인" 버튼을 눌렀을 때 작동되게끔 설정
 		
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			
-			email = emailText.getText();
-			password = passwordText.getText();
+			email = emailText.getText();	// 텍스트 이메일을 문자열로 받아옴
+			password = passwordText.getText(); // 텍스트 패스워드를 문자열로 받아옴
 			
 			
-			JButton button = (JButton)e.getSource();
+			JButton button = (JButton)e.getSource();		// 버튼을 받음
 			while(true) {
-			if(button.getText() != null) {
+			if(button.getText() != null) {		
 				int result = dao.login(email, password);
-				if(result == 1) {
+				if(result == 1) {	//정상적으로 로그인 되었을 때
 					JOptionPane.showMessageDialog(null, "로그인 되었습니다.");
 					setVisible(false);
 					new LoggedInMenu(getTitle());
 					break;
 					
 				}
-				if(result == 0 || result == -1) {
+				if(result == 0 || result == -1) {	// 아이디,비밀번호가 틀렸을 때
 					JOptionPane.showMessageDialog(null, "아이디나 비밀번호를 다시 입력해주세요");
 					break;
 					
 				}
-				if(result == -2) {
-					JOptionPane.showMessageDialog(null, "오류가 났습니다. 다시 시작해주세요.");
-					System.exit(0);
-				}
+				
 				
 				
 				
