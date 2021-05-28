@@ -121,7 +121,7 @@ public class Stage2MainFrame extends JFrame implements Stage2Constant { // 창
 		}
 
 		timer = new Timer(10, new ActionListener() { // 게임 시작 후 실행되는 동안
-														//repaint()에 의 공, 블럭, 바의 그래픽스들이 상시 호출되도록 설정 (설정안하면 끊김)
+								//repaint()에 의 공, 블럭, 바의 그래픽스들이 상시 호출되도록 설정 (설정안하면 끊김)
 			@Override
 
 			public void actionPerformed(ActionEvent e) { // Timer Event
