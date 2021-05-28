@@ -49,42 +49,7 @@ public class Stage3Ball extends JPanel implements Stage3Constant, Runnable {
 	int x_direction, y_direction; 
 
 	Stage3Bar bar;
-	/**
-	 * 
-	 * 볼의 중앙
-	 */
-	Point getCenter() {
-		return new Point(x + (BALL_WIDTH / 2), y + (BALL_HEIGHT / 2)); 
-	}
-	/**
-	 * 
-	 * 볼의 하단
-	 */
-	Point getBottomCenter() { 
-		return new Point(x + (BALL_WIDTH / 2), y + (BALL_HEIGHT)); 
-
-	}
-	/**
-	 * 
-	 * 볼의 상단
-	 */
-	Point getTopCenter() { 
-		return new Point(x + (BALL_WIDTH / 2), y);
-	}
-	/**
-	 * 
-	 * 볼의 좌
-	 */
-	Point getLeftCenter() { 
-		return new Point(x, y + (BALL_HEIGHT / 2));
-	}
-	/**
-	 * 
-	 * 볼의 우
-	 */
-	Point getRightCenter() {
-		return new Point(x + (BALL_WIDTH), y + (BALL_HEIGHT / 2));
-	}
+	
 	/**
 	 * 
 	 * 
