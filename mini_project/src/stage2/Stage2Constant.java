@@ -19,6 +19,6 @@ public interface Stage2Constant {
 	static int BLOCK_GAP = 3; // 블록 사이의 갭
 	static int BAR_WIDTH = 80; // 바의 너비
 	static int BAR_HEIGHT = 20; // 바의 높이
-	static int CANVAS_WIDTH = 400 + (BLOCK_GAP * BLOCK_COLUMNS) + 10;
-	static int CANVAS_HEIGHT = 600;
+	static int CANVAS_WIDTH = 400 + (BLOCK_GAP * BLOCK_COLUMNS) + 10;	//창 너비
+	static int CANVAS_HEIGHT = 600;	// 창 
 }
