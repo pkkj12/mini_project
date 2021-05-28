@@ -59,5 +59,22 @@ JDE: Eclipse
 - 효과음을 추가할 것이다.
 
 
+## SQL문
+```mysql
+create table member(
+email VARCHAR(40) UNIQUE NOT NULL,
+password VARCHAR(15) NOT NULL,
+nickname VARCHAR(20) UNIQUE NOT NULL,
+stage INT DEFAULT 1,
+score INT DEFAULT 0
+)
+```	
+	
+	
 [Javadoc](https://pkkj12.github.io/mini_project/mini_project/doc/index.html)
+	
+	
+
+	
+	
 
